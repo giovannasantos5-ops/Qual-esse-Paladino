@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem é esse Paladino? - Voltron Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Quem é esse Paladino?</h1>
+        <p class="subtitle">Adivinhe qual defensor de Voltron está oculto!</p>
+        
+        <div class="placar">
+            <span>Acertos: <strong id="score-acertos">0</strong></span>
+            <span>Erros: <strong id="score-erros">0</strong></span>
+            <button id="reset-placar-btn">Resetar Placar</button>
+        </div>
+
+        <div class="busca-container">
+            <input type="text" id="paladino-input" placeholder="Digite o nome do paladino...">
+            <button id="revelar-btn">Confirmar Palpite</button>
+            <button id="proximo-btn" class="hidden">Próximo Desafio</button>
+        </div>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img id="paladino-img" class="silhueta" src="" alt="Paladino Oculto">
+            </div>
+            <h2 id="paladino-nome">????</h2>
+            <p>Leão: <span id="paladino-leao">????</span></p>
+        </div>
+
+        <div id="missao-espacial" class="api-container">
+            <h3>Carregando coordenadas da missão...</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
